@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
 
 public class Functions extends SetUp{
 	public static void wait(int ele)
@@ -15,6 +17,13 @@ public class Functions extends SetUp{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public static void verifyText(WebElement ele, String expectedValue)
+	{
+	    String actualText = ele.getText();
+	   // Assert.assertEquals(actualText, expectedValue, "Text mismatch");
+	    Assert.assertEquals(actualText, expectedValue);
 	}
 	
 	public static void click(WebElement ele)

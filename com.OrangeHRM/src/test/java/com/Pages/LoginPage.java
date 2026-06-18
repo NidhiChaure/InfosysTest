@@ -23,17 +23,17 @@ public class LoginPage extends SetUp{
 	}
 	public static void sendUserName(String value)
 	{
-		Functions.wait(5000);
+		Functions.wait(2000);
 		Functions.sendkeys(Functions.waitForElement(username), value);
 	}
 	public static void sendPassword(String value)
 	{
-		Functions.wait(5000);
+		Functions.wait(2000);
 		Functions.sendkeys(Functions.waitForElement(password), value);
 	}
 	public static void clickLoginBtn()
 	{
-		Functions.wait(5000);
+		Functions.wait(2000);
 		Functions.click(Functions.waitForElement(loginBtn));
 	}
 	

@@ -3,6 +3,7 @@ package com.TestCases;
 import org.testng.annotations.Test;
 
 import com.Base.SetUp;
+import com.Pages.DashbordPage;
 import com.Pages.LoginPage;
 
 public class LoginPageTestCases extends SetUp{
@@ -25,4 +26,11 @@ public class LoginPageTestCases extends SetUp{
 		LoginPage.clickLoginBtn();
 		
 	}
+	@Test(priority = 4)
+	public static void TC_004()
+	{
+		DashbordPage.TestDashbord("Dashboard");
+		
+	}
+	
 }
